@@ -1,0 +1,18 @@
+<html>
+<head>
+    <script type="text/javascript" src="../main/runtime/dephine.js"></script>
+    <script type="text/javascript" src="../main/runtime/dephine_browser.js"></script>
+    <script type="text/javascript" src="zoo/animals/cat.js"></script>
+    <script type="text/javascript" src="zoo/animals/animal.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+          var Cat = use("zoo.animals.Cat");
+          var c = new Cat();
+          c.say();
+        };
+    </script>
+</head>
+<body>
+    <div id="out">This shouldn't be here.</div>
+</body>
+</html>
